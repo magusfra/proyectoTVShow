@@ -1,0 +1,33 @@
+<!-- <mat-grid-list cols="4" rowHeight="100px">
+    <mat-grid-libros
+        *ngFor="let tile of libros"
+        [rutaPortada]="tile.rutaPortada"
+        [tituloLibro]="tile.tituloLibro"
+        [resumen]="tile.resumen">
+      {{tile.text}}
+    </mat-grid-libros>
+  </mat-grid-list>
+
+
+[rutaPortada]="item.rutaPortada"; 
+[tituloLibro]="item.tituloLibro"; 
+[resumen]="item.resumen";
+[enlaceAmazon]="item.enlaceAmazon"; 
+
+
+<p>characters works!</p>
+<mat-card>
+    <mat-card-title>{{nombre}}</mat-card-title>
+    <img mat-card-image
+        src="{{rutaPortada}}"
+        width="400px">
+    <mat-card-content>{{datos}}</mat-card-content>
+</mat-card>
+-->
+
+<div class="flex-container">
+  <div *ngFor="let item of reparto">
+    <!-- [rutaPortada]="item.rutaPortada" -->
+    <app-card [rutaPortada]="item.rutaPortada" [nombre]="item.nombre" [datos]="item.datos"></app-card>
+  </div>
+</div>

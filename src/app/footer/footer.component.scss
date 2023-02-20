@@ -1,0 +1,9 @@
+@import "../partials/colors";
+@import "../partials/fonts";
+footer {
+    text-align: center;
+    padding: 3px;
+    background-color: $primary_dk;
+    color: $textonprimary;
+    font-family: $titlesFont;
+  }

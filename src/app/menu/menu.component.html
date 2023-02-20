@@ -1,0 +1,46 @@
+<!-- 
+<nav class="center">
+    <a routerLink="home" routerLinkActive="active-link">Home</a>
+    <a routerLink="characters" routerLinkActive="active-link">Characters</a>
+    <a routerLink="videos" routerLinkActive="active-link">Videos</a>
+</nav>
+
+<mat-toolbar>
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span>My App</span>
+    <span class="example-spacer"></span>
+    <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+      <mat-icon>favorite</mat-icon>
+    </button>
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+      <mat-icon>share</mat-icon>
+    </button>
+  </mat-toolbar>
+-->
+<mat-toolbar id=menu class="menu">
+  <button id="iconoH" mat-icon-button color="secondary" aria-label="Example icon button with a home icon"
+    (click)="drawer.toggle()">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <ul class="list">
+    <li><a routerLink="home" routerLinkActive="active-link">Home</a></li>
+    <li><a routerLink="characters" routerLinkActive="active-link">Characters</a></li>
+    <li><a routerLink="videos" routerLinkActive="active-link">Video</a></li>
+  </ul>
+</mat-toolbar>
+
+<mat-drawer-container class="contenedorMenu">
+  <mat-drawer #drawer mode="side" open>
+    <mat-list role="list" class="slide">
+      <mat-list-item role="listitem"><a class="link" routerLink="home">Home</a></mat-list-item>
+      <mat-list-item role="listitem"><a  class="link" routerLink="characters">Characters</a></mat-list-item>
+      <mat-list-item role="listitem"><a class="link"  routerLink="videos">Video</a></mat-list-item>
+    </mat-list>
+
+  </mat-drawer>
+  <mat-drawer-content>
+    <router-outlet></router-outlet>
+  </mat-drawer-content>
+</mat-drawer-container>

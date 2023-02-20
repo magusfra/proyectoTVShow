@@ -1,0 +1,64 @@
+.principal {
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+    margin-right: 40px;
+
+    p {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    ul {
+        list-style-type: circle;
+    }
+
+    li {
+        margin-left: 25px;
+        margin-right: 25px;
+        color: black;
+        text-shadow: rgb(133, 19, 19) 0.1em 0.1em 0.3em;
+    }
+}
+h2{
+    margin-left: 30px;
+    margin-right: 40px;
+}
+
+
+.example-header-image1 {
+    background-image: url('https://pbs.twimg.com/media/FVX94ncWIAMnQSa.jpg');
+    background-size: cover;
+}
+
+.example-header-image2 {
+    background-image: url('https://pbs.twimg.com/profile_images/1605996801617707027/XUEAlBRn_400x400.jpg');
+    background-size: cover;
+}
+
+.example-header-image3 {
+    background-image: url('https://i.pinimg.com/236x/e6/99/a5/e699a528f795748f6652292741782c5d.jpg');
+    background-size: cover;
+}
+
+.example-header-image4 {
+    background-image: url('https://img.remediosdigitales.com/3ca4fa/flavio/1366_2000.jpeg');
+    background-size: cover;
+}
+
+
+.flex-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow: scroll;
+}
+
+.example-card {
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    max-width: 400px;
+}
